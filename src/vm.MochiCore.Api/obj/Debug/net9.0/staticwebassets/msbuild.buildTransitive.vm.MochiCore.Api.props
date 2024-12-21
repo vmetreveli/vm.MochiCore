@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/vm.MochiCore.Api.props" />
+</Project>

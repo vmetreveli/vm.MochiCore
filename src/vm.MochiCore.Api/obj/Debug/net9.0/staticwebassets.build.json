@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "R1RMJ5awWvm09IAdhrHk0FX9AVWyAYEhkvijR/As1CQ=",
+  "Source": "vm.MochiCore.Api",
+  "BasePath": "_content/vm.MochiCore.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
