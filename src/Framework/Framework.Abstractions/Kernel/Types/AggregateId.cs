@@ -11,7 +11,7 @@ public class AggregateId<T>(T value) : IEquatable<AggregateId<T>>
         return EqualityComparer<T>.Default.Equals(Value, other.Value);
     }
 
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
         if (ReferenceEquals(null, obj)) return false;
         if (ReferenceEquals(this, obj)) return true;
@@ -21,11 +21,11 @@ public class AggregateId<T>(T value) : IEquatable<AggregateId<T>>
 
     public override int GetHashCode()
     {
-        return EqualityComparer<T>.Default.GetHashCode(Value);
+        return EqualityComparer<T>.Default.GetHashCode(Value ?? throw new InvalidOperationException());
     }
 }
 
-public class AggregateId(Guid value) : AggregateId<Guid>(value)
+public sealed class AggregateId(Guid value) : AggregateId<Guid>(value)
 {
     public AggregateId() : this(Guid.NewGuid())
     {

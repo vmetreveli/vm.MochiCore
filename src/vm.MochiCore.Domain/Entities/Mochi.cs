@@ -19,8 +19,8 @@ public class Mochi : AggregateRoot<Guid>, IAuditableEntity, IDeletableEntity
     public string Name { get; set; }
     public decimal Amount { get; set; }
     public string Description { get; set; }
-    public DateTime CreatedOn { get; } = DateTime.Now;
-    public DateTime ModifiedOn { get; }
-    public bool IsDeleted { get; }
-    public DateTime? DeletedOn { get; }
+    public DateTime CreatedOn { get; set; } = DateTime.Now;
+    public DateTime ModifiedOn { get; set; }
+    public bool IsDeleted { get; set; } = false;
+    public DateTime? DeletedOn { get; set; }
 }

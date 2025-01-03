@@ -438,3 +438,4 @@
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Api/obj/Debug/net9.0/vm.MochiCore.Api.pdb
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Api/obj/Debug/net9.0/vm.MochiCore.Api.genruntimeconfig.cache
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Api/obj/Debug/net9.0/ref/vm.MochiCore.Api.dll
+/Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Api/obj/Debug/net9.0/vm.MochiCore.Api.sourcelink.json

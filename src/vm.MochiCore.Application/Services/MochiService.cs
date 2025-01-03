@@ -4,8 +4,6 @@ using vm.MochiCore.Application.Features.Mochi.Command.CreateMochi;
 using vm.MochiCore.Application.Features.Mochi.Command.UpdateMochi;
 using vm.MochiCore.Application.Features.Mochi.Contracts;
 using vm.MochiCore.Domain.Exception.Mochi;
-using vm.MochiCore.Domain.Exception.Mochi.Amount;
-using vm.MochiCore.Domain.Exception.Mochi.Description;
 using vm.MochiCore.Domain.Repository;
 
 namespace vm.MochiCore.Application.Services;
@@ -14,13 +12,12 @@ public class MochiService(IMochiRepository mochiRepository, IUnitOfWork unitOfWo
 {
     public async Task Create(CreateMochiCommand request, CancellationToken cancellationToken)
     {
-        ArgumentNullException.ThrowIfNull(request);
-
-        var res = await mochiRepository.GetByIdAsync(request.Id, cancellationToken);
+     
+        var res = await mochiRepository.GetByNameAsync(request.Name, cancellationToken);
 
         if (res is not null)
         {
-            throw new Exception($"The id {request.Id} already exists.");
+            throw new MochiException(MochiErrors.Duplicate(res.Name));
         }
 
         var model = new Domain.Entities.Mochi
@@ -39,7 +36,7 @@ public class MochiService(IMochiRepository mochiRepository, IUnitOfWork unitOfWo
     {
         var res = await mochiRepository.GetAllAsync(cancellationToken);
 
-        if (res is not null)
+        if (res is null)
         {
             throw new ObjectNotFoundException(typeof(Domain.Entities.Mochi).ToString(), string.Empty);
         }
@@ -52,7 +49,7 @@ public class MochiService(IMochiRepository mochiRepository, IUnitOfWork unitOfWo
     {
         var res = await mochiRepository.GetByIdAsync(id, cancellationToken);
 
-        if (res is not null)
+        if (res is  null)
         {
             throw new ObjectNotFoundException($"The id {id} not Found", string.Empty);
         }
@@ -77,11 +74,11 @@ public class MochiService(IMochiRepository mochiRepository, IUnitOfWork unitOfWo
 
         if (request.Amount is null or 0)
         {
-            throw new MochiException(AmountErrors.NullOrEmpty);
+            throw new MochiException(MochiErrors.Amount.NullOrEmpty);
         }
         if (request.Description is null)
         {
-            throw new MochiException(DescriptionErrors.NullOrEmpty);
+            throw new MochiException(MochiErrors.Description.NullOrEmpty);
         }
 
         if (request.Amount != res.Amount)

@@ -3,7 +3,6 @@ using Serilog;
 using Framework.Infrastructure;
 using vm.MochiCore.Infrastructure;
 using vm.MochiCore.Api;
-using vm.MochiCore.Api.Middleware;
 using vm.MochiCore.Api.Swagger;
 using vm.MochiCore.Application;
 
@@ -36,8 +35,6 @@ builder.Services.AddSwaggerGen(options =>
     options.OperationFilter<SwaggerDefaultValues>();
 });
 
-builder.Services.AddSingleton<ExceptionHandlingMiddleware>();
-
 builder.Services.AddEndpointsApiExplorer();
 
 
@@ -54,9 +51,9 @@ app.UseCors(options =>
         .AllowAnyMethod();
 });
 
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
     app.ApplyMigration();
-    app.UseDeveloperExceptionPage();
+  //  app.UseDeveloperExceptionPage();
 
 app.UseSwagger();
 app.UseSwaggerUI(options =>
@@ -72,7 +69,7 @@ app.UseSwaggerUI(options =>
     }
 });
 
-app.UseMiddleware<ExceptionHandlingMiddleware>();
+// app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseErrorHandling();
 
 
@@ -80,10 +77,9 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-app.UseEndpoints(endpoints =>
+app.UseEndpoints(endpoints=>
 {
-    endpoints.MapControllers();
-
+   endpoints.MapControllers();
 });
 
 

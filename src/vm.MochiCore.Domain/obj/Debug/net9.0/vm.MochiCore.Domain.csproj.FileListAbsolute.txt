@@ -32,3 +32,4 @@
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Domain/obj/Debug/net9.0/refint/vm.MochiCore.Domain.dll
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Domain/obj/Debug/net9.0/vm.MochiCore.Domain.pdb
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Domain/obj/Debug/net9.0/ref/vm.MochiCore.Domain.dll
+/Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Domain/obj/Debug/net9.0/vm.MochiCore.Domain.sourcelink.json

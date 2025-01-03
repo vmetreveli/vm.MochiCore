@@ -16,4 +16,8 @@
       <Content Include="Features\.DS_Store" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Exceptions\" />
+    </ItemGroup>
+
 </Project>

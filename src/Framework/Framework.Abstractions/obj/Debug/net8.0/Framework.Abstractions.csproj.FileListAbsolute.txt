@@ -26,3 +26,4 @@
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/Framework/Framework.Abstractions/obj/Debug/net8.0/Framework.Abstractions.pdb
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/Framework/Framework.Abstractions/obj/Debug/net8.0/Framework.Abstractions.genruntimeconfig.cache
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/Framework/Framework.Abstractions/obj/Debug/net8.0/ref/Framework.Abstractions.dll
+/Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/Framework/Framework.Abstractions/obj/Debug/net8.0/Framework.Abstractions.sourcelink.json

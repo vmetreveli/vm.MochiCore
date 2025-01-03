@@ -40,3 +40,4 @@
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Application/obj/Debug/net9.0/refint/vm.MochiCore.Application.dll
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Application/obj/Debug/net9.0/vm.MochiCore.Application.pdb
 /Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Application/obj/Debug/net9.0/ref/vm.MochiCore.Application.dll
+/Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Application/obj/Debug/net9.0/vm.MochiCore.Application.sourcelink.json
