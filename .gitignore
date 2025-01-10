@@ -1,1 +1,15 @@
-/vm.MochiCore.sln
+# Rider specific
+.idea/
+*.iml
+
+# Build output
+bin/
+obj/
+*.dll
+*.exe
+
+# User-specific
+*.user
+*.suo
+*.userprefs
+*.csproj.user

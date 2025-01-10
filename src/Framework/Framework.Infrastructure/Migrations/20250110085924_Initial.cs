@@ -21,7 +21,8 @@ namespace Framework.Infrastructure.Migrations
                     event_id = table.Column<Guid>(type: "uuid", nullable: false),
                     event_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     state = table.Column<int>(type: "integer", nullable: false),
-                    modified_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    modified_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    content = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
