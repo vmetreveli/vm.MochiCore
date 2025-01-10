@@ -102,10 +102,10 @@
           }
         }
       },
-      "AspNetCore.HealthChecks.NpgSql/8.0.2": {
+      "AspNetCore.HealthChecks.NpgSql/9.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
           "Npgsql": "8.0.3"
         },
         "compile": {
@@ -119,29 +119,29 @@
           }
         }
       },
-      "AspNetCore.HealthChecks.Rabbitmq/8.0.2": {
+      "AspNetCore.HealthChecks.Rabbitmq/9.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0",
-          "RabbitMQ.Client": "6.8.1"
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
+          "RabbitMQ.Client": "7.0.0"
         },
         "compile": {
-          "lib/net6.0/HealthChecks.Rabbitmq.dll": {
+          "lib/net8.0/HealthChecks.Rabbitmq.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/HealthChecks.Rabbitmq.dll": {
+          "lib/net8.0/HealthChecks.Rabbitmq.dll": {
             "related": ".xml"
           }
         }
       },
-      "AspNetCore.HealthChecks.UI/8.0.2": {
+      "AspNetCore.HealthChecks.UI/9.0.0": {
         "type": "package",
         "dependencies": {
-          "AspNetCore.HealthChecks.UI.Data": "8.0.1",
-          "KubernetesClient": "14.0.2",
-          "Microsoft.EntityFrameworkCore.Design": "8.0.0",
+          "AspNetCore.HealthChecks.UI.Data": "9.0.0",
+          "KubernetesClient": "15.0.1",
+          "Microsoft.EntityFrameworkCore.Design": "8.0.11",
           "Microsoft.Extensions.Http": "8.0.0"
         },
         "compile": {
@@ -158,11 +158,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "AspNetCore.HealthChecks.UI.Client/8.0.1": {
+      "AspNetCore.HealthChecks.UI.Client/9.0.0": {
         "type": "package",
         "dependencies": {
-          "AspNetCore.HealthChecks.UI.Core": "8.0.1",
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0"
+          "AspNetCore.HealthChecks.UI.Core": "9.0.0"
         },
         "compile": {
           "lib/net8.0/HealthChecks.UI.Client.dll": {
@@ -178,27 +177,26 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "AspNetCore.HealthChecks.UI.Core/8.0.1": {
+      "AspNetCore.HealthChecks.UI.Core/9.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0"
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11"
         },
         "compile": {
-          "lib/net6.0/HealthChecks.UI.Core.dll": {
+          "lib/net8.0/HealthChecks.UI.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/HealthChecks.UI.Core.dll": {
+          "lib/net8.0/HealthChecks.UI.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "AspNetCore.HealthChecks.UI.Data/8.0.1": {
+      "AspNetCore.HealthChecks.UI.Data/9.0.0": {
         "type": "package",
         "dependencies": {
-          "AspNetCore.HealthChecks.UI.Core": "8.0.1",
+          "AspNetCore.HealthChecks.UI.Core": "9.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
@@ -212,11 +210,11 @@
           }
         }
       },
-      "AspNetCore.HealthChecks.UI.InMemory.Storage/8.0.1": {
+      "AspNetCore.HealthChecks.UI.InMemory.Storage/9.0.0": {
         "type": "package",
         "dependencies": {
-          "AspNetCore.HealthChecks.UI.Data": "8.0.1",
-          "Microsoft.EntityFrameworkCore.InMemory": "8.0.0"
+          "AspNetCore.HealthChecks.UI.Data": "9.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.11"
         },
         "compile": {
           "lib/net8.0/HealthChecks.UI.InMemory.Storage.dll": {
@@ -349,14 +347,13 @@
           }
         }
       },
-      "KubernetesClient/14.0.2": {
+      "KubernetesClient/15.0.1": {
         "type": "package",
         "dependencies": {
           "Fractions": "7.3.0",
           "IdentityModel.OidcClient": "5.2.1",
-          "System.Diagnostics.DiagnosticSource": "7.0.0",
           "System.IdentityModel.Tokens.Jwt": "7.1.2",
-          "YamlDotNet": "15.1.0"
+          "YamlDotNet": "16.0.0"
         },
         "compile": {
           "lib/net8.0/KubernetesClient.dll": {
@@ -4036,7 +4033,7 @@
           }
         }
       },
-      "YamlDotNet/15.1.0": {
+      "YamlDotNet/16.0.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/YamlDotNet.dll": {
@@ -4051,7 +4048,7 @@
       },
       "Framework.Abstractions/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AutoMapper": "13.0.1",
           "AutoMapper.Extensions.ExpressionMapping": "7.0.2",
@@ -4078,7 +4075,7 @@
       },
       "FrameworkVM/1.0.1": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Framework.Abstractions": "1.0.0",
           "Humanizer.Core": "2.14.1",
@@ -4259,50 +4256,48 @@
         "lib/net472/Asp.Versioning.WebApi.ApiExplorer.xml"
       ]
     },
-    "AspNetCore.HealthChecks.NpgSql/8.0.2": {
-      "sha512": "1R0JGr80PkUd0I2HWaunAFcaMPJDhD1qMLYWEIVBkFRdSXrw7KkI5ooJ1hePqk0p/a2IWaqW3+CuxN3qv+yhQA==",
+    "AspNetCore.HealthChecks.NpgSql/9.0.0": {
+      "sha512": "npc58/AD5zuVxERdhCl2Kb7WnL37mwX42SJcXIwvmEig0/dugOLg3SIwtfvvh3TnvTwR/sk5LYNkkPaBdks61A==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.npgsql/8.0.2",
+      "path": "aspnetcore.healthchecks.npgsql/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "aspnetcore.healthchecks.npgsql.8.0.2.nupkg.sha512",
+        "aspnetcore.healthchecks.npgsql.9.0.0.nupkg.sha512",
         "aspnetcore.healthchecks.npgsql.nuspec",
         "icon.png",
-        "lib/net7.0/HealthChecks.NpgSql.dll",
-        "lib/net7.0/HealthChecks.NpgSql.xml",
         "lib/net8.0/HealthChecks.NpgSql.dll",
         "lib/net8.0/HealthChecks.NpgSql.xml",
         "lib/netstandard2.0/HealthChecks.NpgSql.dll",
         "lib/netstandard2.0/HealthChecks.NpgSql.xml"
       ]
     },
-    "AspNetCore.HealthChecks.Rabbitmq/8.0.2": {
-      "sha512": "A/29xmNWfssOY1zq1bWAaZPW/iJfBhJN+I737KKHQutzB0JFwAIKesjsUWN2BAJwqS/ciFMjNxvCDHtAgU0PIQ==",
+    "AspNetCore.HealthChecks.Rabbitmq/9.0.0": {
+      "sha512": "7WSQ7EwioA5niakzzLtGVcZMEOh+42fSwrI24vnNsT7gZuVGOViNekyz38G6wBPYKcpL/lUkMdg3ZaCiZTi/Dw==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.rabbitmq/8.0.2",
+      "path": "aspnetcore.healthchecks.rabbitmq/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "aspnetcore.healthchecks.rabbitmq.8.0.2.nupkg.sha512",
+        "aspnetcore.healthchecks.rabbitmq.9.0.0.nupkg.sha512",
         "aspnetcore.healthchecks.rabbitmq.nuspec",
         "icon.png",
-        "lib/net6.0/HealthChecks.Rabbitmq.dll",
-        "lib/net6.0/HealthChecks.Rabbitmq.xml",
+        "lib/net8.0/HealthChecks.Rabbitmq.dll",
+        "lib/net8.0/HealthChecks.Rabbitmq.xml",
         "lib/netstandard2.0/HealthChecks.Rabbitmq.dll",
         "lib/netstandard2.0/HealthChecks.Rabbitmq.xml"
       ]
     },
-    "AspNetCore.HealthChecks.UI/8.0.2": {
-      "sha512": "AkqR7F8jropKO9FQmsjorM7eB00Y6I9P6jObNqVK0M+dNlEvBGjaJyYP2UM16azOxEuikJeUaCP9+XdrgPSyFg==",
+    "AspNetCore.HealthChecks.UI/9.0.0": {
+      "sha512": "r/bGIiFDm/Bv+S/OCcE1/YzM4Zul1nEKGRA42xcGqxaYmaQf1T+gFEReNNA+5nHXuXt5TRuBuVag1emXuwqe6w==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.ui/8.0.2",
+      "path": "aspnetcore.healthchecks.ui/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aspnetcore.healthchecks.ui.8.0.2.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.9.0.0.nupkg.sha512",
         "aspnetcore.healthchecks.ui.nuspec",
         "icon.png",
         "lib/net8.0/HealthChecks.UI.dll",
@@ -4310,60 +4305,56 @@
         "lib/net8.0/HealthChecks.UI.xml"
       ]
     },
-    "AspNetCore.HealthChecks.UI.Client/8.0.1": {
-      "sha512": "nhC6KIoB/EtTbH3uGm2J6EHEUyTJuETUARFePbmrnA+zjbwsirzIVUQl46qIjvyPABhK0e7Rk+AxcRqC6zikqA==",
+    "AspNetCore.HealthChecks.UI.Client/9.0.0": {
+      "sha512": "1Ub3Wvvbz7CMuFNWgLEc9qqQibiMoovDML/WHrwr5J83RPgtI20giCR92s/ipLgu7IIuqw+W/y7WpIeHqAICxg==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.ui.client/8.0.1",
+      "path": "aspnetcore.healthchecks.ui.client/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aspnetcore.healthchecks.ui.client.8.0.1.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.client.9.0.0.nupkg.sha512",
         "aspnetcore.healthchecks.ui.client.nuspec",
         "icon.png",
-        "lib/net6.0/HealthChecks.UI.Client.dll",
-        "lib/net6.0/HealthChecks.UI.Client.xml",
-        "lib/net7.0/HealthChecks.UI.Client.dll",
-        "lib/net7.0/HealthChecks.UI.Client.xml",
         "lib/net8.0/HealthChecks.UI.Client.dll",
         "lib/net8.0/HealthChecks.UI.Client.xml"
       ]
     },
-    "AspNetCore.HealthChecks.UI.Core/8.0.1": {
-      "sha512": "Vn00MOJ1I0HSqyP7Bt9v0pr0AIgbrXMjL/KFwW+sRwLRogOtep8BWGimd8XYRCbCDLrAi7VSArU02f6pEIw69w==",
+    "AspNetCore.HealthChecks.UI.Core/9.0.0": {
+      "sha512": "TVriy4hgYnhfqz6NAzv8qe62Q8wf82iKUL6WV9selqeFZTq1ILi39Sic6sFQegRysvAVcnxKP/vY8z9Fk8x6XQ==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.ui.core/8.0.1",
+      "path": "aspnetcore.healthchecks.ui.core/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.core.9.0.0.nupkg.sha512",
         "aspnetcore.healthchecks.ui.core.nuspec",
         "icon.png",
-        "lib/net6.0/HealthChecks.UI.Core.dll",
-        "lib/net6.0/HealthChecks.UI.Core.xml"
+        "lib/net8.0/HealthChecks.UI.Core.dll",
+        "lib/net8.0/HealthChecks.UI.Core.xml"
       ]
     },
-    "AspNetCore.HealthChecks.UI.Data/8.0.1": {
-      "sha512": "zST5YYRtE8nTIdlXDC0Sq6bBDrA07ewZRBHr9ZQ+448+cQPJwksXA7M0bZRg4VnE7mGSqkFhifGyGh46XYFvOQ==",
+    "AspNetCore.HealthChecks.UI.Data/9.0.0": {
+      "sha512": "bZkXUdiqXOkmhe3XHF+OIgPQKR8OXS8/+iDWegmxSXtbaIYwsT5+B0URT+P4OPvhj5tR2goMMZe5KwJBVHr+1g==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.ui.data/8.0.1",
+      "path": "aspnetcore.healthchecks.ui.data/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aspnetcore.healthchecks.ui.data.8.0.1.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.data.9.0.0.nupkg.sha512",
         "aspnetcore.healthchecks.ui.data.nuspec",
         "icon.png",
         "lib/net8.0/HealthChecks.UI.Data.dll",
         "lib/net8.0/HealthChecks.UI.Data.xml"
       ]
     },
-    "AspNetCore.HealthChecks.UI.InMemory.Storage/8.0.1": {
-      "sha512": "FyVAIARWm8ofpedMm0101z62KM67OCiIxcyQ8/GMllyoc2KA33vFbz4OEWICEALWwiKv53GNr6XRrPCBqUmBmg==",
+    "AspNetCore.HealthChecks.UI.InMemory.Storage/9.0.0": {
+      "sha512": "xuq+HBH8Ckz9r5d+yP1pk7cgIbPLBqCGfYu0MxtvbtsxIo7cv5nQoUCJsdgqN5/a4ndVUJZco6GjWFk6r4xN1w==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.ui.inmemory.storage/8.0.1",
+      "path": "aspnetcore.healthchecks.ui.inmemory.storage/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aspnetcore.healthchecks.ui.inmemory.storage.8.0.1.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.inmemory.storage.9.0.0.nupkg.sha512",
         "aspnetcore.healthchecks.ui.inmemory.storage.nuspec",
         "icon.png",
         "lib/net8.0/HealthChecks.UI.InMemory.Storage.dll",
@@ -4507,14 +4498,14 @@
         "lib/netstandard2.0/IdentityModel.OidcClient.xml"
       ]
     },
-    "KubernetesClient/14.0.2": {
-      "sha512": "Ul7SLe34fLwOahsJKFf2InqcuRTCIBr3mW1PtabXlYeCJeP7yPiYyrGxilLn2+HIq1C5AoMTydhGcdNLbc/f9w==",
+    "KubernetesClient/15.0.1": {
+      "sha512": "IOsMJaBpiHELr7ZeiJQypdtLDbc/HqxbEh9UMaDvLpBvGIzS+KhjA0LJVEbGgvubmhWHxLPfgHAL0le1zr2RwA==",
       "type": "package",
-      "path": "kubernetesclient/14.0.2",
+      "path": "kubernetesclient/15.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "kubernetesclient.14.0.2.nupkg.sha512",
+        "kubernetesclient.15.0.1.nupkg.sha512",
         "kubernetesclient.nuspec",
         "lib/net6.0/KubernetesClient.dll",
         "lib/net6.0/KubernetesClient.pdb",
@@ -11902,28 +11893,27 @@
         "throw.nuspec"
       ]
     },
-    "YamlDotNet/15.1.0": {
-      "sha512": "fXrqmKkzBtXeJiHEsZOPEWkonHweiwk/l0Hqhz4yMIZPh57kZy03Xbj2/e8HV1QIkTw7yeBe9bbphuE3YiI4vQ==",
+    "YamlDotNet/16.0.0": {
+      "sha512": "kZ4jR5ltFhnjaUqK9x81zXRIUTH4PTXTTEmJDNQdkDLQhcv+2Nl19r0dCSvPW1mstOYBfXTnjdieRbUO6gHMDw==",
       "type": "package",
-      "path": "yamldotnet/15.1.0",
+      "path": "yamldotnet/16.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
+        "README.md",
         "images/yamldotnet.png",
         "lib/net47/YamlDotNet.dll",
         "lib/net47/YamlDotNet.xml",
         "lib/net6.0/YamlDotNet.dll",
         "lib/net6.0/YamlDotNet.xml",
-        "lib/net7.0/YamlDotNet.dll",
-        "lib/net7.0/YamlDotNet.xml",
         "lib/net8.0/YamlDotNet.dll",
         "lib/net8.0/YamlDotNet.xml",
         "lib/netstandard2.0/YamlDotNet.dll",
         "lib/netstandard2.0/YamlDotNet.xml",
         "lib/netstandard2.1/YamlDotNet.dll",
         "lib/netstandard2.1/YamlDotNet.xml",
-        "yamldotnet.15.1.0.nupkg.sha512",
+        "yamldotnet.16.0.0.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
     },
@@ -11958,11 +11948,11 @@
       "Asp.Versioning.Mvc.ApiExplorer >= 8.1.0",
       "Asp.Versioning.WebApi >= 7.1.0",
       "Asp.Versioning.WebApi.ApiExplorer >= 7.1.0",
-      "AspNetCore.HealthChecks.NpgSql >= 8.0.2",
-      "AspNetCore.HealthChecks.Rabbitmq >= 8.0.2",
-      "AspNetCore.HealthChecks.UI >= 8.0.2",
-      "AspNetCore.HealthChecks.UI.Client >= 8.0.1",
-      "AspNetCore.HealthChecks.UI.InMemory.Storage >= 8.0.1",
+      "AspNetCore.HealthChecks.NpgSql >= 9.0.0",
+      "AspNetCore.HealthChecks.Rabbitmq >= 9.0.0",
+      "AspNetCore.HealthChecks.UI >= 9.0.0",
+      "AspNetCore.HealthChecks.UI.Client >= 9.0.0",
+      "AspNetCore.HealthChecks.UI.InMemory.Storage >= 9.0.0",
       "Microsoft.Data.Sqlite >= 9.0.0",
       "Microsoft.Data.Sqlite.Core >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
@@ -12043,23 +12033,23 @@
           },
           "AspNetCore.HealthChecks.NpgSql": {
             "target": "Package",
-            "version": "[8.0.2, )"
+            "version": "[9.0.0, )"
           },
           "AspNetCore.HealthChecks.Rabbitmq": {
             "target": "Package",
-            "version": "[8.0.2, )"
+            "version": "[9.0.0, )"
           },
           "AspNetCore.HealthChecks.UI": {
             "target": "Package",
-            "version": "[8.0.2, )"
+            "version": "[9.0.0, )"
           },
           "AspNetCore.HealthChecks.UI.Client": {
             "target": "Package",
-            "version": "[8.0.1, )"
+            "version": "[9.0.0, )"
           },
           "AspNetCore.HealthChecks.UI.InMemory.Storage": {
             "target": "Package",
-            "version": "[8.0.1, )"
+            "version": "[9.0.0, )"
           },
           "Microsoft.Data.Sqlite": {
             "target": "Package",

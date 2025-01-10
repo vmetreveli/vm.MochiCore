@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zwFm3WqHhC0=",
+  "dgSpecHash": "zmRXnVVE1R8=",
   "success": true,
   "projectFilePath": "/Users/vakhushtimetreveli/RiderProjects/Mochi/vm.MochiCore/src/vm.MochiCore.Api/vm.MochiCore.Api.csproj",
   "expectedPackageFiles": [
@@ -10,13 +10,13 @@
     "/Users/vakhushtimetreveli/.nuget/packages/asp.versioning.mvc.apiexplorer/8.1.0/asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/asp.versioning.webapi/7.1.0/asp.versioning.webapi.7.1.0.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/asp.versioning.webapi.apiexplorer/7.1.0/asp.versioning.webapi.apiexplorer.7.1.0.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.npgsql/8.0.2/aspnetcore.healthchecks.npgsql.8.0.2.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.rabbitmq/8.0.2/aspnetcore.healthchecks.rabbitmq.8.0.2.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui/8.0.2/aspnetcore.healthchecks.ui.8.0.2.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.client/8.0.1/aspnetcore.healthchecks.ui.client.8.0.1.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.core/8.0.1/aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.data/8.0.1/aspnetcore.healthchecks.ui.data.8.0.1.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.inmemory.storage/8.0.1/aspnetcore.healthchecks.ui.inmemory.storage.8.0.1.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.npgsql/9.0.0/aspnetcore.healthchecks.npgsql.9.0.0.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.rabbitmq/9.0.0/aspnetcore.healthchecks.rabbitmq.9.0.0.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui/9.0.0/aspnetcore.healthchecks.ui.9.0.0.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.client/9.0.0/aspnetcore.healthchecks.ui.client.9.0.0.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.core/9.0.0/aspnetcore.healthchecks.ui.core.9.0.0.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.data/9.0.0/aspnetcore.healthchecks.ui.data.9.0.0.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/aspnetcore.healthchecks.ui.inmemory.storage/9.0.0/aspnetcore.healthchecks.ui.inmemory.storage.9.0.0.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/automapper.extensions.expressionmapping/7.0.2/automapper.extensions.expressionmapping.7.0.2.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/efcore.namingconventions/9.0.0/efcore.namingconventions.9.0.0.nupkg.sha512",
@@ -25,7 +25,7 @@
     "/Users/vakhushtimetreveli/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/identitymodel/5.2.0/identitymodel.5.2.0.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/identitymodel.oidcclient/5.2.1/identitymodel.oidcclient.5.2.1.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/kubernetesclient/14.0.2/kubernetesclient.14.0.2.nupkg.sha512",
+    "/Users/vakhushtimetreveli/.nuget/packages/kubernetesclient/15.0.1/kubernetesclient.15.0.1.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/masstransit/8.3.4/masstransit.8.3.4.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/masstransit.abstractions/8.3.4/masstransit.abstractions.8.3.4.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/masstransit.aspnetcore/7.3.1/masstransit.aspnetcore.7.3.1.nupkg.sha512",
@@ -221,7 +221,7 @@
     "/Users/vakhushtimetreveli/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/vakhushtimetreveli/.nuget/packages/throw/1.4.0/throw.1.4.0.nupkg.sha512",
-    "/Users/vakhushtimetreveli/.nuget/packages/yamldotnet/15.1.0/yamldotnet.15.1.0.nupkg.sha512"
+    "/Users/vakhushtimetreveli/.nuget/packages/yamldotnet/16.0.0/yamldotnet.16.0.0.nupkg.sha512"
   ],
   "logs": [
     {
