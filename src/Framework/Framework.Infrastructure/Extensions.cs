@@ -29,13 +29,13 @@ public static class Extensions
     {
         services.AddCommands(assembly);
         services.AddQueries(assembly);
-        services.AddEvents(assembly);
-        services.AddEventBus(configuration);
+        // services.AddEvents(assembly);
+        // services.AddEventBus(configuration);
         services.AddScoped<IDispatcher, Dispatcher>();
         services.AddScoped<IOutboxRepository, OutboxRepository>();
         services.AddErrorHandling();
 
-
+      
 
         // Configure the database context with PostgreSQL settings
         services
