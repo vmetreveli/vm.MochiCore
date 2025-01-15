@@ -29,12 +29,13 @@ public static class Extensions
     {
         services.AddCommands(assembly);
         services.AddQueries(assembly);
-        // services.AddEvents(assembly);
-        // services.AddEventBus(configuration);
+        services.AddEvents(assembly);
+        services.AddEventBus(configuration);
         services.AddScoped<IDispatcher, Dispatcher>();
+        services.AddScoped<IOutboxRepository, OutboxRepository>();
         services.AddErrorHandling();
 
-       // services.AddScoped<IOutboxRepository, OutboxRepository>();
+
 
         // Configure the database context with PostgreSQL settings
         services
@@ -174,7 +175,12 @@ public static class Extensions
     private static IServiceCollection AddEventBus(this IServiceCollection services,
         IConfiguration configuration)
     {
-        var config = configuration.GetSection("AppConfiguration:RabbitMQ").Get<RabbitMqOptions>();
+        var rabbitMqSection = configuration.GetSection("AppConfiguration:RabbitMQ");
+        if (!rabbitMqSection.Exists())
+        {
+            throw new InflowException("Configuration section 'AppConfiguration:RabbitMQ' is missing.");
+        }
+        var config = rabbitMqSection.Get<RabbitMqOptions>();
 
         // Add the required Quartz.NET services
         services.AddQuartz(q =>
