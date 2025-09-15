@@ -11,7 +11,7 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
-        services.AddAutoMapper(typeof(DependencyInjection).Assembly);
+       // services.AddAutoMapper(typeof(DependencyInjection).Assembly);
         services.AddScoped<IMochiService, MochiService>();
         services.AddFramework(configuration, typeof(DependencyInjection).Assembly);
 

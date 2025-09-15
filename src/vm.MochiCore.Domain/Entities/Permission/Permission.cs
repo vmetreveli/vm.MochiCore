@@ -1,4 +1,6 @@
+using Framework.Abstractions.Primitives;
 using vm.MochiCore.Domain.Primitives;
+using vm.MochiCore.Domain.ValueObjects;
 
 namespace vm.MochiCore.Domain.Entities.Permission;
 
@@ -25,7 +27,7 @@ namespace vm.MochiCore.Domain.Entities.Permission;
 //     public DateTime? DeletedOn { get; set; }
 // }
 
-public sealed class Permission : Enumeration<Permission>
+public sealed class Permission : AggregateRoot<Guid>, IAuditableEntity, IDeletableEntity
 {
     // Predefined Permissions
     public static readonly Permission ReadMember = new ( new Guid("80a0d8c0-8a64-426a-9331-71c4bbbe0547"), "ReadMember");
@@ -48,21 +50,26 @@ public sealed class Permission : Enumeration<Permission>
         ];
     }
 
-    public Permission()
+    public Permission():base(Guid.NewGuid())
     {
         
     }
 
     // Constructor
-    private Permission(Guid id, string name) : base(id, name)
+    private Permission(Guid id, string name) : base(id)
     {
+       // Name = name;
     }
 
     // Public static property to access all permissions
     public static IReadOnlyCollection<Permission> AllPermissions => _allPermissions.AsReadOnly();
 
     // Override ToString for convenience
-    public override string ToString() => Name;
+   // public override string ToString() => Name;
+    public DateTime CreatedOn { get; }
+    public DateTime ModifiedOn { get; }
+    public bool IsDeleted { get; }
+    public DateTime? DeletedOn { get; }
 }
 
 
